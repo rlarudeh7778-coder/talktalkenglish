@@ -393,7 +393,7 @@ h1.hero-title .pop{color:var(--pop)}
 .apply-call{margin-top:32px;display:inline-flex;align-items:center;gap:14px;padding:16px 22px;border-radius:var(--r2);
   background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13)}
 .apply-call .lab{font-size:12.5px;color:#8E9AB5;font-weight:600}
-.apply-call .num{font-family:Montserrat,sans-serif;font-weight:900;font-size:21px;color:#fff;letter-spacing:.01em}
+.apply-call .tel-num{font-family:Montserrat,sans-serif;font-weight:900;font-size:21px;color:#fff;letter-spacing:.01em}
 .form-card{background:#fff;border-radius:var(--r3);padding:38px 34px;box-shadow:var(--sh3);color:var(--ink)}
 .form-title{font-size:21px;font-weight:800;letter-spacing:-.04em}
 .form-sub{margin-top:8px;font-size:14px;color:var(--t2)}
@@ -478,6 +478,7 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
   opacity:0;pointer-events:none;transition:opacity .3s,transform .3s var(--ease);max-width:90vw;text-align:center}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
+<noscript><style>.rv{opacity:1;transform:none}.typing{display:none}.bub{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
 
@@ -970,7 +971,7 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
       <a class="apply-call" href="tel:01068570716" data-ev="tel-apply">
         <span>
           <span class="lab">전화 상담</span><br>
-          <span class="num">010-6857-0716</span>
+          <span class="tel-num">010-6857-0716</span>
         </span>
       </a>
     </div>
@@ -1150,6 +1151,14 @@ if("IntersectionObserver" in window){
 }else{
   $$(".rv").forEach(function(el){el.classList.add("on")});
 }
+/* 안전장치: 관찰자가 늦게 동작해도 첫 화면 콘텐츠는 반드시 보이게 */
+window.addEventListener("load",function(){
+  setTimeout(function(){
+    $$(".rv:not(.on)").forEach(function(el){
+      if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add("on");
+    });
+  },900);
+});
 
 /* ── 숫자 카운트업 ── */
 function countUp(el){
