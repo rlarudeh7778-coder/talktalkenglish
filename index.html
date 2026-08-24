@@ -293,6 +293,20 @@ h1.hero-title .pop{color:var(--pop)}
 .rs-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:22px;text-align:center}
 .rs-n{font-family:Montserrat,sans-serif;font-weight:900;font-size:27px;color:#fff}
 .rs-l{margin-top:6px;font-size:13px;color:#98A3BC;font-weight:600}
+.routine .sec-sub b{color:#fff;font-weight:700}
+.tl-note{margin-top:10px;font-size:13.5px;color:#7C879F}
+.rt-custom{max-width:860px;margin:54px auto 0;padding:34px 32px;border-radius:var(--r3);
+  background:linear-gradient(135deg,rgba(47,107,255,.17),rgba(255,176,32,.07));border:1px solid rgba(255,255,255,.13)}
+.rtc-head h3{font-size:clamp(19px,2.6vw,26px);font-weight:800;letter-spacing:-.045em;line-height:1.45}
+.rtc-head h3 em{font-style:normal;color:var(--gold)}
+.rtc-head p{margin-top:13px;font-size:15px;color:#A9B4CC;line-height:1.85}
+.rtc-grid{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rtc-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:22px 20px}
+.rtc-ico{width:36px;height:36px;border-radius:11px;background:rgba(47,107,255,.24);display:grid;place-items:center;color:#BBD0FF;margin-bottom:14px}
+.rtc-ico svg{width:18px;height:18px}
+.rtc-t{font-size:15.5px;font-weight:700;letter-spacing:-.035em}
+.rtc-d{margin-top:9px;font-size:13.8px;color:#98A3BC;line-height:1.78}
+@media(max-width:760px){.rtc-grid{grid-template-columns:1fr}.rt-custom{padding:28px 22px}}
 @media(max-width:600px){.routine-sum{grid-template-columns:1fr}}
 
 /* ── 7. 로드맵 ── */
@@ -702,41 +716,67 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
 <section class="routine sec-pad lazysec" id="routine">
   <div class="wrap">
     <div class="routine-head center rv">
-      <span class="eyebrow on-dark">DAILY 20MIN</span>
+      <span class="eyebrow on-dark">1:1 CUSTOM ROUTINE</span>
       <h2 class="sec-title">하루 <em>20분</em>,<br>이렇게 흘러갑니다</h2>
-      <p class="sec-sub">시간을 더 내라고 하지 않습니다. 출근길과 점심시간이면 충분합니다.</p>
+      <p class="sec-sub">시간을 더 내라고 하지 않습니다. 출퇴근길이나 잠깐 나는 시간이면 됩니다.<br>다만 아래 흐름은 <b>하나의 예시</b>일 뿐, 실제 학습량과 수업 시간은<br><b>개인별 맞춤 테스트 결과에 따라 수강생마다 다르게 설계</b>됩니다.</p>
     </div>
     <div class="tl">
       <div class="tl-item rv" style="--d:.04s">
-        <div class="tl-time">08:00 AM</div>
+        <div class="tl-time">STEP 01 · 하루의 시작</div>
         <h3 class="tl-t">오늘의 한 문장 도착</h3>
         <p class="tl-d">지난 수업에서 막혔던 지점을 반영한 문장을 보내드립니다. 예문과 쓰는 상황까지 함께 정리해서.</p>
       </div>
       <div class="tl-item rv" style="--d:.08s">
-        <div class="tl-time">08:10 AM · 7분</div>
+        <div class="tl-time">STEP 02 · 이동 중 7분 내외</div>
         <h3 class="tl-t">듣고 따라 말하기</h3>
-        <p class="tl-d">출근길에 세 번 듣고 다섯 번 따라 합니다. 눈으로 읽는 게 아니라 소리 내어 말합니다.</p>
+        <p class="tl-d">이동하면서 세 번 듣고 다섯 번 따라 합니다. 눈으로 읽는 게 아니라 소리 내어 말합니다.</p>
       </div>
       <div class="tl-item rv" style="--d:.12s">
-        <div class="tl-time">12:30 PM · 5분</div>
+        <div class="tl-time">STEP 03 · 틈나는 시간 5분 내외</div>
         <h3 class="tl-t">녹음해서 전송</h3>
         <p class="tl-d">시간 날 때 한 번 녹음해 보냅니다. 코치가 발음·억양·자연스러움을 짚어 돌려드립니다.</p>
       </div>
       <div class="tl-item rv" style="--d:.16s">
-        <div class="tl-time">저녁 · 8분</div>
+        <div class="tl-time">STEP 04 · 하루 마무리 8분 내외</div>
         <h3 class="tl-t">문장 확장 &amp; 복습</h3>
         <p class="tl-d">오늘 문장에 살을 붙여 문장을 늘립니다. 3일 전 문장도 함께 복습해 장기 기억으로 넘깁니다.</p>
       </div>
       <div class="tl-item rv" style="--d:.2s">
-        <div class="tl-time">주 1회 · 40분</div>
+        <div class="tl-time">STEP 05 · 협의된 요일 · 시간</div>
         <h3 class="tl-t">실전 대화 수업</h3>
-        <p class="tl-d">일주일 동안 쌓은 문장을 실제 대화에서 써봅니다. 배운 표현을 꺼내 쓰는 연습을 합니다.</p>
+        <p class="tl-d">그동안 쌓은 문장을 실제 대화에서 써봅니다. 수업 횟수와 길이는 목표와 일정에 따라 수강생마다 다르게 잡습니다.</p>
+        <p class="tl-note">※ 위 시간과 분량은 예시이며, 실제 배치는 진단 결과와 생활 패턴에 맞춰 조정합니다.</p>
       </div>
     </div>
+    <div class="rt-custom">
+      <div class="rtc-head rv">
+        <h3>이 루틴은 <em>수강생마다 다르게</em> 짜입니다</h3>
+        <p>정해진 시간표에 사람을 맞추지 않습니다. 시작 전 <b>개인별 맞춤 테스트</b>로 지금 어디까지 말할 수 있는지 확인하고,
+        그 결과를 기준으로 커리큘럼과 수업 시간을 새로 설계합니다. 그래서 같은 날 시작한 두 분의 학습 내용이 서로 다릅니다.</p>
+      </div>
+      <div class="rtc-grid">
+        <div class="rtc-card rv" style="--d:.04s">
+          <div class="rtc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6v3.6a2 2 0 0 0 .35 1.13l4.3 6.3A2 2 0 0 1 18 16.2V19a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-2.8a2 2 0 0 1 .35-1.17l4.3-6.3A2 2 0 0 0 11 7.6V2"/><path d="M7.5 14h9"/></svg></div>
+          <h4 class="rtc-t">개인별 맞춤 테스트</h4>
+          <p class="rtc-d">시작 전 1:1 말하기 테스트로 현재 수준과 막히는 지점을 확인합니다. 수업 중에도 주기적으로 점검하며 난이도를 다시 맞춥니다.</p>
+        </div>
+        <div class="rtc-card rv" style="--d:.08s">
+          <div class="rtc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H19v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M9 7h6M9 11h4"/></svg></div>
+          <h4 class="rtc-t">커리큘럼은 각자 다르게</h4>
+          <p class="rtc-d">같은 왕초보라도 목표가 생활회화인지, 회의 대응인지, 면접인지에 따라 배우는 문장과 순서가 완전히 달라집니다.</p>
+        </div>
+        <div class="rtc-card rv" style="--d:.12s">
+          <div class="rtc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <h4 class="rtc-t">수업 시간 · 분량도 협의</h4>
+          <p class="rtc-d">고정 시간표가 없습니다. 직장·육아·교대근무 등 생활 패턴에 맞춰 요일과 시간을 정하고, 하루 학습량도 함께 조절합니다.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="routine-sum">
-      <div class="rs-card rv" style="--d:.04s"><div class="rs-n">20분</div><div class="rs-l">하루 학습 시간</div></div>
+      <div class="rs-card rv" style="--d:.04s"><div class="rs-n">20분</div><div class="rs-l">하루 학습 시간 (기본 권장)</div></div>
       <div class="rs-card rv" style="--d:.08s"><div class="rs-n">1:1</div><div class="rs-l">수업 진행 방식</div></div>
-      <div class="rs-card rv" style="--d:.12s"><div class="rs-n">주 1회</div><div class="rs-l">실전 대화 수업</div></div>
+      <div class="rs-card rv" style="--d:.12s"><div class="rs-n">개인별</div><div class="rs-l">커리큘럼 · 수업 시간</div></div>
     </div>
   </div>
 </section>
@@ -828,7 +868,7 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button" aria-expanded="false">직장인이라 시간이 없는데 가능한가요?<i aria-hidden="true"></i></button>
-        <div class="faq-a"><p>하루 20분 기준으로 구성되어 있습니다. 출근길 7분, 점심시간 5분, 저녁 8분처럼 쪼개서 진행할 수 있고, 실전 대화 수업은 주 1회 40분입니다. 야근·출장이 잦다면 일정 조정도 가능합니다.</p></div>
+        <div class="faq-a"><p>하루 20분 기준으로 구성되어 있고, 7분·5분·8분처럼 쪼개서 진행할 수 있습니다. 실전 대화 수업의 요일·시간·횟수는 <b>정해진 시간표 없이 상담 때 협의해 정합니다.</b> 학습량 역시 진단 테스트 결과와 생활 패턴에 맞춰 수강생마다 다르게 잡습니다. 야근·출장이 잦다면 시작 후에도 조정 가능합니다.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button" aria-expanded="false">수업은 온라인인가요, 대면인가요?<i aria-hidden="true"></i></button>
