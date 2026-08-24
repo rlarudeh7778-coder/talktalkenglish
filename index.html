@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>톡톡잉글리쉬 | 하루 20분, 말하기 중심 성인 1:1 영어회화</title>
+<title>톡톡 일대일 원어민 영어회화 | 하루 20분, 말하기 중심 1:1 영어회화</title>
 
-<meta name="description" content="읽으면 아는데 입이 안 떨어지는 이유는 머리가 아니라 배운 방식 때문입니다. 톡톡잉글리쉬는 하루 20분 말하기 중심으로 진행하는 성인 1:1 영어회화 코칭입니다. 카카오톡 상담 · 전화 상담 010-6857-0716.">
-<meta name="keywords" content="영어회화, 성인영어회화, 왕초보영어, 1:1영어, 화상영어, 영어스피킹, 톡톡잉글리쉬, TALK TALK ENGLISH">
-<meta name="author" content="톡톡잉글리쉬">
+<meta name="description" content="읽으면 아는데 입이 안 떨어지는 이유는 머리가 아니라 배운 방식 때문입니다. 톡톡 일대일 원어민 영어회화는 하루 20분 말하기 중심으로 진행하는 성인 1:1 영어회화 수업입니다. 카카오톡 상담 · 전화 상담 010-6857-0716.">
+<meta name="keywords" content="영어회화, 성인영어회화, 왕초보영어, 1:1영어, 원어민 화상영어, 영어스피킹, 톡톡 일대일 원어민 영어회화, 구로 영어회화">
+<meta name="author" content="톡톡 일대일 원어민 영어회화">
 <meta name="theme-color" content="#2F6BFF">
 
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="톡톡잉글리쉬">
+<meta property="og:site_name" content="톡톡 일대일 원어민 영어회화">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:title" content="톡톡잉글리쉬 | 말하기 중심 성인 1:1 영어회화">
+<meta property="og:title" content="톡톡 일대일 원어민 영어회화 | 말하기 중심 1:1 영어회화">
 <meta property="og:description" content="하루 20분, 말하는 시간을 늘리는 방식으로 진행합니다. 편하게 카카오톡으로 상담해 보세요.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="톡톡잉글리쉬 | 하루 20분, 말하기 중심 영어회화">
+<meta name="twitter:title" content="톡톡 일대일 원어민 영어회화 | 하루 20분, 말하기 중심 영어회화">
 <meta name="twitter:description" content="성인 1:1 영어회화 코칭. 말하는 시간을 늘리는 방식으로 진행합니다.">
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -104,7 +104,8 @@ nav.solid{background:rgba(255,255,255,.86);backdrop-filter:blur(18px) saturate(1
 nav.solid .logo-txt{color:var(--ink)}
 .logo-txt b{color:var(--blue3);transition:color .3s}
 nav.solid .logo-txt b{color:var(--blue)}
-.logo-ko{font-size:12px;font-weight:700;color:rgba(255,255,255,.6);margin-left:2px;transition:color .3s}
+.logo-ko{font-size:12px;font-weight:700;color:rgba(255,255,255,.6);margin-left:2px;transition:color .3s;white-space:nowrap}
+@media(max-width:680px){.logo-ko{display:none}}
 nav.solid .logo-ko{color:var(--t3)}
 .nav-menu{display:flex;gap:30px;list-style:none;font-size:15px;font-weight:600}
 .nav-menu a{color:rgba(255,255,255,.82);transition:color .2s}
@@ -313,6 +314,22 @@ h1.hero-title .pop{color:var(--pop)}
 @media(max-width:1000px){.road-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.road-grid{grid-template-columns:1fr}}
 
+/* ── 8. 영상 밴드 ── */
+.cine{position:relative;display:flex;align-items:center;overflow:hidden;background:var(--ink);isolation:isolate}
+.cine-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.cine::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(8,12,24,.9) 0%,rgba(8,12,24,.66) 46%,rgba(8,12,24,.22) 100%)}
+.cine .wrap{position:relative;z-index:2;width:100%}
+.cine-box{max-width:600px;color:#fff;padding:clamp(64px,9vw,104px) 0}
+.cine-t{font-size:clamp(25px,4.1vw,42px);font-weight:800;line-height:1.36;letter-spacing:-.05em}
+.cine-t em{font-style:normal;color:var(--gold)}
+.cine-d{margin-top:18px;font-size:clamp(14.5px,1.7vw,17px);line-height:1.88;color:#C2CCE0}
+.cine-cta{margin-top:30px;display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:760px){
+  .cine::after{background:linear-gradient(180deg,rgba(8,12,24,.5) 0%,rgba(8,12,24,.86) 62%,rgba(8,12,24,.94) 100%)}
+  .cine-box{max-width:none}
+}
+
 /* ── 9. 비교 ── */
 .cmp{background:#fff}
 .cmp-head{max-width:720px;margin:0 auto 48px}
@@ -329,7 +346,7 @@ h1.hero-title .pop{color:var(--pop)}
   .cmp-row{grid-template-columns:1fr}
   .cmp-row>div{padding:14px 18px}
   .cmp-row .c2::before{content:"일반 학원/앱 · ";font-weight:700;color:var(--t3)}
-  .cmp-row .c3::before{content:"톡톡잉글리쉬 · ";font-weight:800;color:var(--blue)}
+  .cmp-row .c3::before{content:"톡톡 · ";font-weight:800;color:var(--blue)}
   .cmp-head-row{display:none}
 }
 
@@ -440,10 +457,10 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
 
 <nav id="nav">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="톡톡잉글리쉬 홈">
+    <a href="#top" class="logo" aria-label="톡톡 일대일 원어민 영어회화 홈">
       <span class="logo-mark">TT</span>
       <span class="logo-txt">TALK<b>TALK</b></span>
-      <span class="logo-ko">톡톡잉글리쉬</span>
+      <span class="logo-ko">톡톡 일대일 원어민 영어회화</span>
     </a>
     <ul class="nav-menu">
       <li><a href="#why">왜 안 트일까</a></li>
@@ -468,7 +485,7 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
       </h1>
       <p class="hero-desc">
         문법책 대신 <b>대화</b>, 암기 대신 <b>반응</b>.<br>
-        톡톡잉글리쉬는 하루 20분, 당신이 <b>실제로 말하는 시간</b>을<br>
+        톡톡 일대일 원어민 영어회화는 하루 20분,<br>당신이 <b>실제로 말하는 시간</b>을<br>
         늘리는 방식으로 수업을 진행합니다.
       </p>
       <div class="hero-cta">
@@ -585,7 +602,7 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
       </div>
     </div>
     <div class="cause-turn rv">
-      <p>그래서 톡톡잉글리쉬는<br><span>&lsquo;가르치는 수업&rsquo;이 아니라 &lsquo;말하게 만드는 습관&rsquo;</span>을 설계했습니다.</p>
+      <p>그래서 톡톡 일대일 원어민 영어회화는<br><span>&lsquo;가르치는 수업&rsquo;이 아니라 &lsquo;말하게 만드는 습관&rsquo;</span>을 설계했습니다.</p>
       <small>수업 시간을 늘리는 대신, 당신이 입을 여는 횟수를 늘렸습니다.</small>
     </div>
   </div>
@@ -630,7 +647,7 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
   <div class="wrap">
     <div class="feat-head center rv">
       <span class="eyebrow">WHY TALK TALK</span>
-      <h2 class="sec-title">톡톡잉글리쉬는<br><span class="mk">이렇게 진행합니다</span></h2>
+      <h2 class="sec-title">톡톡 일대일 원어민 영어회화는<br><span class="mk">이렇게 진행합니다</span></h2>
     </div>
     <div class="feat-grid">
       <div class="feat-card rv" style="--d:.04s">
@@ -789,6 +806,27 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
   </div>
 </section>
 
+<!-- ═══════════ 8. 영상 밴드 ═══════════ -->
+<section class="cine" id="cine">
+  <video class="cine-vid" id="cineVid" muted loop playsinline preload="none"
+         poster="travel-poster.jpg" data-src="travel.mp4" aria-hidden="true" tabindex="-1"></video>
+  <div class="wrap">
+    <div class="cine-box rv">
+      <span class="eyebrow on-dark">NEXT TRIP</span>
+      <h2 class="cine-t">다음 비행기에서는,<br><em>옆자리 승객과 인사</em>부터</h2>
+      <p class="cine-d">
+        여행지에서, 출장지에서, 해외 거래처와의 화상회의에서.<br>
+        영어가 필요한 순간은 늘 예고 없이 찾아옵니다.<br>
+        그때 꺼내 쓸 문장을, 지금부터 하나씩 쌓아둡니다.
+      </p>
+      <div class="cine-cta">
+        <a class="btn btn-kakao" data-kakao data-ev="kakao-cine">카카오톡으로 상담하기</a>
+        <a class="btn btn-ghost" href="tel:01068570716" data-ev="tel-cine">전화 상담 010-6857-0716</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════ 9. 비교 ═══════════ -->
 <section class="cmp sec-pad lazysec" id="compare">
   <div class="wrap">
@@ -885,8 +923,8 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
   <div class="wrap">
     <div class="ft-top">
       <div>
-        <div class="ft-logo">TALK<b>TALK</b> ENGLISH</div>
-        <div class="ft-slogan">영어는 공부가 아니라 대화로 트입니다.</div>
+        <div class="ft-logo">TALK<b>TALK</b></div>
+        <div class="ft-slogan">톡톡 일대일 원어민 영어회화 · 영어는 공부가 아니라 대화로 트입니다.</div>
       </div>
       <div class="ft-links">
         <a href="#why">왜 안 트일까</a>
@@ -897,11 +935,12 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
       </div>
     </div>
     <div class="ft-info">
-      <div><b>톡톡잉글리쉬 (TALK TALK ENGLISH)</b></div>
+      <div>상호 <b>톡톡 일대일 원어민 영어회화</b> · 대표 <b>김규리</b></div>
+      <div>사업자등록번호 <b>394-32-01337</b></div>
+      <div>서울특별시 구로구 디지털로31길 85, 106동 605호</div>
       <div>상담 문의 <b>010-6857-0716</b> · 평일 10:00~20:00</div>
-      <div>성인 1:1 영어회화 코칭 · 온라인 수업</div>
     </div>
-    <div class="ft-copy">© 2026 TALK TALK ENGLISH. All rights reserved.</div>
+    <div class="ft-copy">© 2026 톡톡 일대일 원어민 영어회화. All rights reserved.</div>
   </div>
 </footer>
 
@@ -936,7 +975,7 @@ footer{background:#06090F;color:#7A8499;padding:56px 0 120px;font-size:14px}
 </div>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"EducationalOrganization","name":"톡톡잉글리쉬","alternateName":"TALK TALK ENGLISH","description":"하루 20분 말하기 습관으로 입이 트이는 성인 1:1 영어회화 코칭","telephone":"+82-10-6857-0716","areaServed":"KR","knowsLanguage":["ko","en"],"contactPoint":{"@type":"ContactPoint","telephone":"+82-10-6857-0716","contactType":"customer service","availableLanguage":["Korean","English"]}}
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"톡톡 일대일 원어민 영어회화","alternateName":"TALK TALK","description":"하루 20분 말하기 중심으로 진행하는 성인 1:1 원어민 영어회화 수업","telephone":"+82-10-6857-0716","founder":{"@type":"Person","name":"김규리"},"address":{"@type":"PostalAddress","streetAddress":"디지털로31길 85, 106동 605호","addressLocality":"구로구","addressRegion":"서울특별시","addressCountry":"KR"},"areaServed":"KR","knowsLanguage":["ko","en"],"contactPoint":{"@type":"ContactPoint","telephone":"+82-10-6857-0716","contactType":"customer service","availableLanguage":["Korean","English"]}}
 </script>
 
 <script>
@@ -1008,6 +1047,26 @@ window.addEventListener("load",function(){
     });
   },900);
 });
+
+/* ── 배경 영상 지연 로딩 (화면에 가까워질 때만 내려받음) ── */
+var cine=$("#cineVid");
+if(cine && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  var loadCine=function(){
+    if(cine.dataset.loaded) return;
+    cine.dataset.loaded="1";
+    cine.src=cine.dataset.src;
+    var pr=cine.play();
+    if(pr && pr.catch) pr.catch(function(){});
+  };
+  if("IntersectionObserver" in window){
+    var io3=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){loadCine();io3.disconnect()}});
+    },{rootMargin:"400px 0px"});
+    io3.observe(cine);
+  }else{
+    window.addEventListener("load",loadCine);
+  }
+}
 
 /* ── FAQ 아코디언 ── */
 $$(".faq-q").forEach(function(btn){
